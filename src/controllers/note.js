@@ -6,6 +6,7 @@ module.exports = {
         noteModels.getNote()
             .then((resultnote) => {
                 const result = resultnote
+                console.log(result)
                 MiscHelper.response(res, result, 200)
             })
             .catch((err) => {
